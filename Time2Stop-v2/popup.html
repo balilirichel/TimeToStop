@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Time2Stop</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="popup.js"></script>
+</head>
+<body>
+    <div class="container">
+        
+        <h1>Time2Stop<img src="images/time2stop_icon.png" alt="Time2Stop Icon" class="icon"> </h1>
+        <div class="input-group">
+            <label for="hours">Hours:</label>
+            <input type="number" id="hours" min="0">
+        </div>
+        <div class="input-group">
+            <label for="minutes">Minutes:</label>
+            <input type="number" id="minutes" min="0" max="59">
+        </div>
+        <div class="input-group">
+            <label for="seconds">Seconds:</label>
+            <input type="number" id="seconds" min="0" max="59">
+        </div>
+        <div class="radio-group">
+            <input type="radio" id="closeAllTabs" name="closingTabs" value="all" checked>
+            <label for="closeAllTabs"><span></span>Close all tabs in all windows</label>
+        </div>
+        <div class="radio-group">
+            <input type="radio" id="closeAllTabsCurrentWindow" name="closingTabs" value="current">
+            <label for="closeAllTabsCurrentWindow"><span></span>Close all tabs in this window</label>
+        </div>
+        <div class="radio-group">
+            <input type="radio" id="closeThisTab" name="closingTabs" value="this">
+            <label for="closeThisTab"><span></span>Only close this tab</label>
+        </div>
+        <button id="startTimer">Start Timer</button>
+        <button id="stopTimer">Stop Timer</button>
+
+        <div id="countdown"> <img src="images/time_remaining_icon.png" alt="Time Remaining Icon" class="icon">Time remaining:<span id="countdownTimer">--:--:--</span></div> <!-- Add this line -->
+        <hr>
+        <h2><img src="images/tab_blocker_icon.png" alt="Tab Blocker Icon" class="icon">Tab Blocker</h2> 
+        <label>
+            <input type="checkbox" id="toggle" />
+            Enable Tab Blocker
+        </label> <br>
+        <button id="modeToggle">Dark Mode</button>
+        <br>
+        <a href="menu.html" target="_main_interface">Main Menu</a>
+    </div>
+         <div id="popup">
+        
+</body>
+</html>

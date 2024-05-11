@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Time2Stop</title>
+    <link rel="stylesheet" type="text/css" href="menu.css">
+</head>
+<body>
+
+<div class="sidenav">
+    <a href="#dashboard">Dashboard</a>
+    <a href="#timer">Countdown Timer</a>
+    <a href="#set">Set Reminder</a>
+    <a href="#about">About</a>
+</div>
+
+<div class="main">
+    
+    <div id="defaultContent">
+        <p> "Time is the most valuable asset we have in the digital age. Make every second count with Time2Stop – your productivity partner."</p>
+    </div>
+    
+    <div id="dashboard" class="content">
+
+        <div class="dashboar-content">
+            <h2>Dashboard</h2>
+        <p>This is the content for the Dashboard.</p>
+        <h3>Total Browser Usage Duration</h3>
+        <p id="totalUsageDuration">Calculating...</p>
+        <h3>Most Visited Sites</h3>
+        <ul id="mostVisitedSites">
+            <!-- Most visited sites will be added here dynamically -->
+        </ul>
+        </div>
+    
+    </div>
+
+    <div id="timer" class="content">
+        <div class="timer-content">
+            <h2>Countdown Timer</h2>
+            <p>This is the content for the Countdown Timer.</p>
+        </div>
+    </div>
+
+    <div id="set" class="content">
+        <div class="set-content">
+            <h2>Set Reminder</h2>
+        <p>This is the content for Set Reminder.</p>
+        
+        <div class="reminder-type">
+            <label for="breakfastTime">Breakfast Time:</label>
+            <input type="time" id="breakfastTime">
+            <button id="setBreakfastReminderButton">Set Reminder</button>
+        </div>
+
+        <div class="reminder-type">
+            <label for="snacksTime">Snacks Time:</label>
+            <input type="time" id="snacksTime">
+            <button id="setSnacksReminderButton">Set Reminder</button>
+        </div>
+
+        <div class="reminder-type">
+            <label for="lunchTime">Lunch Time:</label>
+            <input type="time" id="lunchTime">
+            <button id="setLunchReminderButton">Set Reminder</button>
+        </div>
+
+        <div class="reminder-type">
+            <label for="aftersnacksTime">Afternoon Snacks Time:</label>
+            <input type="time" id="aftersnacksTime">
+            <button id="setAfterSnacksReminderButton">Set Reminder</button>
+        </div>
+        <div class="reminder-type">
+            <label for="dinnerTime">Dinner Time:</label>
+            <input type="time" id="dinnerTime">
+            <button id="setDinnerReminderButton">Set Reminder</button>
+        </div>
+
+        </div>
+    </div>
+
+    <div id="about" class="content">
+        
+        <h2><img src="images/about_icon.png" alt="About Icon" class="about-icon"> About </h2> 
+        <div class="about-content">
+
+        <p>Description:</p>
+        <p>Time2Stop is a Chrome extension designed to enhance productivity by helping users manage their online activities effectively. It provides a countdown timer with customizable options and the ability to automatically close tabs based on user preferences. Additionally, it includes a feature called "Tab Blocker" to further support focused work.</p>
+        <p>Key Features:</p>
+        <ul>
+            <li>Countdown Timer: Time2Stop allows users to set a countdown timer by specifying hours, minutes, and seconds, creating a sense of urgency and focus.</li>
+            <li>Tab Management: Users can choose from various options to control tab behavior when the timer expires. Options include closing all tabs in all windows, closing tabs in the current window, or just closing the active tab.</li>
+            <li>Real-time Display: The extension displays the countdown timer in the browser, ensuring users are always aware of the time remaining for their task.</li>
+            <li>Tab Blocker: The "Tab Blocker" feature allows users to block access to distracting websites during focused work sessions, promoting better time management.</li>
+        </ul>
+        <p>Use Cases:</p>
+        <ul>
+            <li>Productive Work Sessions: Time2Stop is perfect for users who need to stay focused during work or study sessions. They can set a timer and configure the extension to close tabs or block access to distracting websites.</li>
+            <li>Time Management: It helps individuals manage their time effectively. Users can allocate a specific time for a task, and the extension reminds them when the time is up.</li>
+            <li>Minimize Distractions: Time2Stop can help users reduce online distractions. They can block social media and entertainment websites during work hours.</li>
+            <li>Self-imposed Limits: Users who want to limit their online activities, such as reducing social media usage, can set a timer to enforce their self-imposed restrictions.</li>
+            <li>Deadlines and Reminders: Time2Stop serves as a visual countdown to deadlines. It can be used to remind users of approaching deadlines for assignments, meetings, or appointments.</li>
+            <li>Exercising Self-control: It's a useful tool for exercising self-control in the age of constant digital distractions. Users can set a timer to encourage taking regular breaks or to limit screen time.</li>
+            <li>Customizable Workflows: Time2Stop offers multiple options for tab management, allowing users to customize their workflow based on their specific needs and habits.</li>
+        </ul>
+        <p>In summary, Time2Stop is a versatile extension that fosters productivity, time management, and self-discipline by providing a visual timer and tab management features. Its various use cases make it a valuable tool for a wide range of users.</p>
+    </div>
+    </div>
+</div>
+
+<script src="menu_dashboard.js"></script> 
+<script src="set_reminder.js"></script>   
+
+</body>
+</html> 

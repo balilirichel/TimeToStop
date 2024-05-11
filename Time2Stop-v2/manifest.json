@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "Time2Stop",
+  "description": "You can set a timer for any open tab and it will automatically close when the countdown reaches zero.",
+  "version": "1.0",
+"permissions": ["tabs", "activeTab", "notifications", "storage", "history", "alarms", "webNavigation"],
+  "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+          "16": "images/icon16.png",
+          "48": "images/icon48.png",
+          "128": "images/icon128.png"
+      }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+        "matches": ["<all_urls>"],
+        "js": ["set_reminders.js"]
+    }
+],
+  "icons": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+  },
+  "web_accessible_resources": [
+    {
+        "resources": ["menu.html"],
+        "matches": ["<all_urls>"]
+    }
+]
+}

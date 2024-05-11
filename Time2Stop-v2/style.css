@@ -1,0 +1,156 @@
+    /* Overall container style */
+.container {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    width: 250px; /* Increased the width for a more spacious look */
+    text-align: center;
+    margin: 0 auto; /* Center the container horizontally */
+    background-color: #4d8ef0;
+    border-radius: 10px; /* Adds rounded corners for aesthetics */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+
+/*background
+.container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    width: 175px;
+    text-align: center;
+    margin: 0 auto; 
+    background-image: url('images/background.jpg'); 
+    background-size: auto; 
+    background-repeat: no-repeat; 
+    background-position: center center; 
+    color: #ffffff; 
+}
+*/
+
+/* Label style for input fields */
+.input-group label {
+    display: inline-block;
+    width: 60px;
+    text-align: right;
+    margin-right: 5px;
+    margin-top: 5px; /* Adjust vertical spacing */
+}
+
+/* Input fields style */
+.input-group input[type="number"] {
+    width: 40px;
+    padding: 2px;
+    margin-right: 10px;
+}
+
+/* Radio-group container style */
+.radio-group {
+    margin-top: 10px;
+    text-align: left; /* Adjust text alignment */
+}
+
+/* Style for radio buttons */
+.radio-group input[type="radio"] {
+    display: none; /* Hide the actual radio button */
+}
+
+/* Style for the custom radio button */
+.radio-group label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    display: inline-block; /* Display radio buttons horizontally */
+    margin-right: 15px; /* Adjust horizontal spacing between radio buttons */
+}
+
+.radio-group label span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: background-color 0.3s; /* Add a transition effect on hover */
+}
+
+/* Style for the custom radio button when selected */
+.radio-group input[type="radio"]:checked + label span::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #6db1df;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Start button style */
+#startTimer {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #7ddadd;
+    color: #d2eebf;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Add a transition effect on hover */
+}
+
+/* Countdown display style */
+#countdown {
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Style for disabled input fields and button during countdown */
+input:disabled, #startTimer:disabled {
+    background-color: #e1ebdf;
+    cursor: not-allowed;
+}
+
+/* Checkbox style */
+.checkbox-group label {
+    display: block;
+    margin-top: 10px; /* Adjust vertical spacing */
+    cursor: pointer;
+}
+
+/* Tab Blocker toggle label style */
+#toggle {
+    margin-top: 15px; /* Adjust vertical spacing */
+    cursor: pointer;
+}
+
+.icon {
+    width: 27px; /* Adjust the size as needed */
+    height: 27px; /* Adjust the size as needed */
+    margin-right: 5px; /* Adjust spacing between icon and text */
+    vertical-align: middle; /* Align the icon vertically with text */
+}
+/* Dark mode styles */
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode .radio-group label span {
+    background-color: #555;
+    border: 1px solid #777;
+    box-shadow: 0 0 5px #777;
+}
+
+.dark-mode #startTimer {
+    background-color: #7ddadd;
+    color: #000;
+}
+
+.dark-mode #countdown {
+    color: #7ddadd;
+}
+
+/* Add more styles for dark mode as needed */

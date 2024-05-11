@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 25px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Style for the main section */
+.main {
+  flex: 1; /* Fill remaining horizontal space */
+  margin-left: 160px;
+  font-size: 18px;
+  padding: 20px;
+  overflow-y: auto;
+  max-height: 100%;
+}
+
+/* Show the target content */
+.content:target {
+  display: block;
+}
+
+/* Hide all content sections by default */
+.content {
+  display: none;
+}
+
+#defaultContent {
+  display: block;
+}
+
+
+/* Dashboard content styles */
+
+
+#timer {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#set {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 5px;
+}
+/* Style for the "Set Reminder" section */
+/* Reminder container */
+.set-content {
+  font-family: 'Poppins', sans-serif;
+  margin: 20px;
+}
+
+/* Reminder headings */
+.set-content h2 {
+  font-size: 24px;
+  color: #333;
+}
+
+/* Reminder items */
+.reminder {
+  margin-bottom: 20px;
+}
+
+/* Label for reminder time */
+.reminder label {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Time input */
+.reminder input[type="time"] {
+  font-size: 14px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Set Reminder button */
+.reminder button[id^="set"] {
+  font-size: 16px;
+  padding: 8px 16px;
+  background-color: #4d8ef0;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Turn Off Reminder button */
+.reminder button[id^="turnOff"] {
+  font-size: 16px;
+  padding: 8px 16px;
+  background-color: #ff5555;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 10px;
+}
+
+/* Hover effect for buttons */
+.reminder button:hover {
+  background-color: #3c78d8;
+}
+
+/* Reminder notification text style */
+.reminder-notification {
+  font-size: 16px;
+  color: #4d8ef0;
+}
+
+
+/* Style for the "About" section */
+#about {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Style for the "About" icon */
+.about-icon {
+  width: 50px;
+  height: 50px;
+  margin: 0px;
+}
+
+/* Style for headings and paragraphs */
+h2, p {
+  margin: 10px 0;
+}
+
+/* Style for lists */
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+/* Style for list items */
+li {
+  margin: 5px 0;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
